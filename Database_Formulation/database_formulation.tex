@@ -17,44 +17,73 @@
 \begin{center}
 \section*{Comprehensive Database Formulation}
 \end{center}
-
-Technichus is a relatively small Science Center company located in an urban town in Sweden. As such, they have an office where the entire exhibition takes place indoors. The themes related to each exhibit can vary drastically. Examples include, but are not limited to: teaching conceptual foundations (natural sciences), exploration of natural and cosmic phenomena, human experiences (body, mind, psychology, philosophy, etc), and technological or scientific principles.\\
+\bigskip
+Technichus is a Science Center company located in a small town in Sweden. They have an office where the entire exhibition takes place indoors. The themes related to each exhibit can vary drastically. Examples include, but are not limited to: teaching conceptual foundations (natural sciences), exploration of natural and cosmic phenomena, human experiences (body, mind, psychology, philosophy, etc), and technological or scientific principles.\\
 \bigskip
 
-The exhibits may be interactive or not. Each station (exhibit) is typically coupled with complementary information on a board, with static text or images. This particular science center is open for the general public, but is primarily intended for children. We have been contacted to develop a form of digital signage solution for the company, as the static walls of texts involve a lot of work in setting them up as well as modifying or tearing them down, and they are not accommodating all possible demographics (especially children, who will find large texts to be boring). This is why a digital signage solution, with some form of a tablet or display, is requested.\\
+The exhibits may be interactive or not. Each station (exhibit) is typically coupled with complementary information on a board, with static text or images. This particular science center is open for the general public, but is primarily intended for children.\\
+\bigskip
+We have been contacted to develop a form of digital signage solution for the company. The reason being that the static walls of texts involves a lot of time-consuming work in developing them, setting them up, modifying or tearing them down.\\
+\bigskip
+Perhaps more importantly, they are not accommodating all possible demographics, especially children, who may find elaborate descriptions to be tedious. This is why a digital signage solution, with some form of a tablet or display, has been requested.\\
 \bigskip
 
-The organizers wants to be able to control the information and the content presented on the tablets. This includes easily setting up a new layout for a particular exhibit, and designing it, or styling it to their liking, as well as adding or modifying existing information layouts.\\
+The organizers wants to be able to control the information and the content presented on the tablets. This includes easily setting up a new layout for a particular exhibit, designing it, or styling it to their liking, as well as adding or modifying existing information layouts.\\
 \bigskip
 
 It is assumed that each exhibit will have its own tablet next to it, or a set of tablets if the exhibit is larger and the need is there. Each tablet will be connected to its own Raspberry Pi. The raspberry pi's will contain the database storing information for each tablet, such as exhibit id, demographic id, language id, etc. This ensures that each tablet can quickly load up the correct information based on the circumstances.\\
+\bigskip
 \bigskip
 
 \begin{itemize}
 \item Each exhibit may have one or more tablets associated with it.
 \item Each exhibit may have one or more demographics attending it.
-\item Each exhibit may have groups of people understanding one or different languages.
-\item Each exhibit may have groups of people where one or several suffer from some kind of disability
+\item Each exhibit may have groups of people understanding one or many different languages.
+\item Each exhibit may have groups of people where one or several individuals suffer from some kind of disability
 \end{itemize}
 \bigskip
 
 \pagebreak
-\textbf{\large{The following are common disabilities and how we aim to address them:}}\\
+\textbf{\large{The following are common disabilities and possible ways of addressing them:}}\\
 \begin{itemize}
-\item Hearing impairment: Offer sign language, captioning for videos, visual aids to supplement auditory information
-\item Vision impairment: Tactile displays, braille labels, voice readings, option to increase font size. Clear resolution on screens.
-\item Physical disabilities: Option to lower exhibit's display height
-\item Cognitive/Neurological disabilities, or Sensory sensitivities: Option to put on noise-cancelling headphones when receiving information from the tablets, option for more interactive information on the digital sign
+\item \textbf{Hearing impairment:} Offer sign language, captioning for videos, visual aids to supplement auditory information
+\item \textbf{Vision impairment:} Tactile displays, braille labels, voice readings, option to increase font size. Clear resolution on screens.
+\item \textbf{Physical disabilities:} Option to lower exhibit's display height
+\item \textbf{Cognitive/Neurological disabilities, or Sensory sensitivities:} Option to put on noise-cancelling headphones when receiving information from the tablets, option for more interactive information on the digital sign
 \end{itemize}
+\bigskip
 
+\pagebreak
+\section*{ER-Diagram: In Collaboration with ChatGPT}
+\bigskip
+\begin{center}
+\includegraphics[scale=0.3]{science_center.png}
+\end{center}
+\bigskip
 
+\section*{ER-Diagram to Relational Schema Conversion}
+\bigskip
+\begin{itemize}
+\item Exhibit(\underline{EXH\_ID}, exh\_name, exh\_theme, exh\_descr, created\_at, updated\_at)
 
+\item DigitalSign(\underline{SIGN\_ID}, exh\_id (FK), active\_layout\_id (FK), created\_at, updated\_at)
 
+\item InformativeLayout(\underline{layout\_id}, digital\_sign\_id (FK), layout\_name, layout\_descr, layout\_source *, created\_at, updated\_at)
 
+\item LayoutDemographic(\underline{LD\_ID} layout\_id (FK), demographic\_id (FK))
 
+\item LayoutLanguage(\underline{LL\_ID} layout\_id (FK), lang\_id (FK))
 
+\item Language(\underline{language\_id}, lang\_name)
 
+\item Demographic(\underline{DEMO\_ID}, demo\_name, demo\_age\_range)
 
+\item Disability(\underline{DISABILITY\_ID}, type, description)
+
+\item DemographicDisability(\underline{DD\_ID} DEMO\_ID, DISABILITY\_ID)
+\end{itemize}
+\bigskip
+* URL or path to where its digital content is stored.
 
 
 \end{document}

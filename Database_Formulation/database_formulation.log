@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  7 SEP 2023 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  10 SEP 2023 21:55
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -356,26 +356,50 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+
+Overfull \hbox (11.20683pt too wide) in paragraph at lines 21--21
+\OT1/cmr/m/n/14.4 They have an of-fice where the en-tire ex-hi-bi-tion takes pl
+ace in-doors. The themes 
+ []
+
 [1
 
 {C:/Users/darks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
+<science_center.png, id=11, 1608.0075pt x 951.555pt>
+File: science_center.png Graphic file (type png)
+<use science_center.png>
+Package pdftex.def Info: science_center.png  used on input line 60.
+(pdftex.def)             Requested size: 482.40598pt x 285.4687pt.
+
+Overfull \hbox (5.18837pt too wide) in paragraph at lines 67--68
+[]\OT1/cmr/m/n/14.4 Exhibit($[]$, exh[]name, exh[]theme, exh[]descr, cre-ated[]
+at, up-dated[]at)  
+ []
+
+
+Overfull \hbox (17.23546pt too wide) in paragraph at lines 71--72
+[]\OT1/cmr/m/n/14.4 InformativeLayout($[]$, dig-i-tal[]sign[]id (FK), lay-out[]
+name, lay-out[]descr, 
+ []
+
+[3 <./science_center.png>]
 This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
 (database_formulation.aux) ) 
 Here is how much of TeX's memory you used:
- 4277 strings out of 475380
- 68453 string characters out of 2787090
+ 4292 strings out of 475380
+ 68708 string characters out of 2787090
  435843 words of memory out of 3000000
- 25652 multiletter control sequences out of 15000+600000
- 471118 words of font info for 34 fonts, out of 8000000 for 9000
+ 25663 multiletter control sequences out of 15000+600000
+ 472184 words of font info for 38 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,62p,719b,184s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 55i,10n,62p,493b,186s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\darks\AppData\Local\MiKTeX\fonts/pk/ljfo
 ur/jknappen/ec/dpi600\tcrm1440.pk><C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb><C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 12.pfb>
-Output written on database_formulation.pdf (2 pages, 35905 bytes).
+Output written on database_formulation.pdf (3 pages, 208677 bytes).
 PDF statistics:
- 24 PDF objects out of 1000 (max. 8388607)
+ 30 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
