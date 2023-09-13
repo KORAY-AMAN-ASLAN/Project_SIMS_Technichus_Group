@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  12 SEP 2023 14:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  13 SEP 2023 19:23
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**./database_formulation.tex
-(database_formulation.tex
+**./tech_infra.tex
+(tech_infra.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-10-26>
 (C:\LaTex\MiKTeX\MiKTeX\tex/latex/exam\exam.cls
@@ -282,8 +282,8 @@ File: l3backend-pdftex.def 2022-10-26 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count317
 \l__pdf_internal_box=\box55
 )
-(database_formulation.aux)
-\openout1 = `database_formulation.aux'.
+(tech_infra.aux)
+\openout1 = `tech_infra.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
@@ -300,8 +300,7 @@ LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 Package ragged2e Info: ABD: executing \RaggedRight on input line 16.
-
-(C:\LaTex\MiKTeX\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+ (C:\LaTex\MiKTeX\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count318
 \scratchdimen=\dimen166
@@ -356,51 +355,24 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-
-Overfull \hbox (11.20683pt too wide) in paragraph at lines 21--21
-\OT1/cmr/m/n/14.4 They have an of-fice where the en-tire ex-hi-bi-tion takes pl
-ace in-doors. The themes 
- []
-
 [1
 
 {C:/Users/darks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-[3]
-<science_center.png, id=14, 1608.0075pt x 951.555pt>
-File: science_center.png Graphic file (type png)
-<use science_center.png>
-Package pdftex.def Info: science_center.png  used on input line 62.
-(pdftex.def)             Requested size: 482.40598pt x 285.4687pt.
-
-Overfull \hbox (5.18837pt too wide) in paragraph at lines 69--70
-[]\OT1/cmr/m/n/14.4 Exhibit($[]$, exh[]name, exh[]theme, exh[]descr, cre-ated[]
-at, up-dated[]at)  
- []
-
-
-Overfull \hbox (17.23546pt too wide) in paragraph at lines 73--74
-[]\OT1/cmr/m/n/14.4 InformativeLayout($[]$, dig-i-tal[]sign[]id (FK), lay-out[]
-name, lay-out[]descr, 
- []
-
-[4 <./science_center.png>]
 This exam contains 0 questions with 0 parts, 0 subparts, and 0 subsubparts.
-(database_formulation.aux) ) 
+(tech_infra.aux) ) 
 Here is how much of TeX's memory you used:
- 4292 strings out of 475380
- 68708 string characters out of 2787090
- 435843 words of memory out of 3000000
- 25663 multiletter control sequences out of 15000+600000
- 472184 words of font info for 38 fonts, out of 8000000 for 9000
+ 4273 strings out of 475380
+ 68316 string characters out of 2787090
+ 432823 words of memory out of 3000000
+ 25649 multiletter control sequences out of 15000+600000
+ 471076 words of font info for 34 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,10n,62p,493b,290s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\darks\AppData\Local\MiKTeX\fonts/pk/ljfo
-ur/jknappen/ec/dpi600\tcrm1440.pk><C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb><C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
-12.pfb>
-Output written on database_formulation.pdf (4 pages, 209501 bytes).
+ 55i,10n,62p,335b,186s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb><C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on tech_infra.pdf (2 pages, 36104 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
+ 19 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

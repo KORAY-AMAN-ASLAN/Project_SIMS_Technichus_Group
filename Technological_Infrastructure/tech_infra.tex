@@ -1,0 +1,53 @@
+\documentclass{exam}
+\usepackage{enumitem}
+\usepackage[14pt]{extsizes}
+\usepackage{amsmath}
+\usepackage[document]{ragged2e}
+\usepackage{graphicx}
+\renewcommand{\thequestion}{\bfseries\large\arabic{question}}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={170mm,250mm},
+ left=20mm,
+ top=20mm,
+}
+
+\begin{document}
+\section{Technological Infrastructure}
+\bigskip
+\subsection{Hardware Infrastructure}
+\bigskip
+LED-screens with raspberry pi embedded systems, communicating with desktop computers.\\
+\bigskip
+
+\subsection{Software Infrastructure}
+\bigskip
+\subsubsection{Front-End}
+\bigskip
+\subsubsection{Back-End}
+\bigskip
+
+\subsection{Dashboard - Application Layer}
+\bigskip
+
+\subsection{Workflow}
+\bigskip
+\subsubsection{Installation and Setup}
+\bigskip
+A staff member receives our pre-programmed raspberry pi's and the dashboard software solution. Let's say a staff member wants to add another station with a screen and raspberry pi. They set up the devices and plug in the cables.\\ 
+\bigskip
+The raspberry pi's have been pre-programmed by us such that, when they boot up they will run a startup script that will send an asynchronous request to the server side API.\\
+\bigskip
+The server side API will determine whether or not the MAC address of the raspberry pi belongs to any primary key value (to some existing raspberry pi device that's already stored), if not, it will send back a response, marking it as being "new" or "inactive".\\
+\bigskip
+If this is the case, another request is made such that the RPi gets stored in the database with a unique primary key and its MAC address, and other attributes (including a key for the screen it is connected to), and during this process the MAC-address is reserved for the RPi for future reference.
+
+Then, they can click on "create new media player", which will show available devices that have not yet been assigned a unique layout-id. Then they proceed to drag and drop whatever they choose according to their design, which is then returned to the front end.
+
+\bigskip
+
+\section{UML diagram}
+\bigskip
+
+\end{document}
