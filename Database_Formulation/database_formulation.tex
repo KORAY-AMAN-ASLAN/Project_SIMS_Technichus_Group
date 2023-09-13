@@ -68,7 +68,7 @@ The database will be installed on the local desktop computers, situated in the s
 \begin{itemize}
 \item Exhibit(\underline{EXH\_ID}, exh\_name, exh\_theme, exh\_descr, created\_at, updated\_at)
 
-\item DigitalSign(\underline{SIGN\_ID}, exh\_id (FK), active\_layout\_id (FK), created\_at, updated\_at)
+\item DigitalSign(\underline{SIGN\_ID}, exh\_id (FK), active\_layout\_id (FK), created\_at, updated\_at, height, width, resolution)
 
 \item InformativeLayout(\underline{layout\_id}, digital\_sign\_id (FK), layout\_name, layout\_descr, layout\_source *, created\_at, updated\_at)
 
@@ -86,6 +86,13 @@ The database will be installed on the local desktop computers, situated in the s
 \end{itemize}
 \bigskip
 * URL or path to where its digital content is stored.
+
+\pagebreak
+\section*{What needs to be changed}
+\bigskip
+I need modify my ER-diagram and consequently the relational schema such that it includes screen width, height and resolution, and how this affects the choice of layout, what the relationship between them is etc.\\
+\bigskip
+
 
 
 \end{document}
