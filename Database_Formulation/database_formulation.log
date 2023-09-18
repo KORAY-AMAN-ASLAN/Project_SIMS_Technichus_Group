@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  16 SEP 2023 11:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.3)  18 SEP 2023 20:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -366,13 +366,18 @@ ace in-doors. The themes
 
 {C:/Users/darks/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
 [3]
-<science_center.png, id=14, 1808.7575pt x 1567.8575pt>
+<science_center.png, id=14, 2731.20375pt x 1581.91pt>
 File: science_center.png Graphic file (type png)
 <use science_center.png>
 Package pdftex.def Info: science_center.png  used on input line 62.
-(pdftex.def)             Requested size: 452.18828pt x 391.96341pt.
- [4 <./science_center.png>]
-Overfull \hbox (5.18837pt too wide) in paragraph at lines 70--71
+(pdftex.def)             Requested size: 491.59547pt x 284.73152pt.
+
+Overfull \hbox (7.89864pt too wide) in paragraph at lines 62--63
+ [] 
+ []
+
+[4 <./science_center.png>]
+Overfull \hbox (5.18837pt too wide) in paragraph at lines 74--75
 []\OT1/cmr/m/n/14.4 Exhibit($[]$, exh[]name, exh[]theme, exh[]descr, cre-ated[]
 at, up-dated[]at)  
  []
@@ -392,7 +397,7 @@ Here is how much of TeX's memory you used:
 ur/jknappen/ec/dpi600\tcrm1440.pk><C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb><C:/LaTex/MiKTeX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr
 12.pfb>
-Output written on database_formulation.pdf (5 pages, 288476 bytes).
+Output written on database_formulation.pdf (5 pages, 452131 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
