@@ -47,7 +47,13 @@ async function fetchDataFromServer(endpoint, queryParams = {}) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('welcome_msg').style.display = "none";
+
+    const welcomeDiv = document.getElementById('welcome_div');
+    if(welcomeDiv !== null) {
+        welcomeDiv.style.display = "none";
+    } else {
+        console.log("Element with ID 'welcome_div' not found.");
+    }
 
     /*--------------------------------- ADMINISTRATOR REGISTRATION------------------------------------- */
     const submitAdmin = document.getElementById("reg_admin_submit_btn");
