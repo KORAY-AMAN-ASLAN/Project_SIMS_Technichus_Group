@@ -25,13 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
             },
             body: JSON.stringify(payload)
         })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert("Registration successful");
-                } else {
-                    alert("Registration failed");
-                }
-            });
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("Registration successful");
+                window.location.href = "../public/dashboard.html"
+            } else {
+                alert("Registration failed");
+            }
+        });
     });
 });
+
