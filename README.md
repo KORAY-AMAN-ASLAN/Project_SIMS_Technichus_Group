@@ -9,4 +9,4 @@ Project-based on  product development, Technichus Group
 
 
 The picture below shows how data flow is handled using the python library for translation and JS for fetching and others.
-![Translation Process using Python](https://github.com/AMAN-ARABZADEH/Project_SIMS_Technichus_Group/blob/main/translation%20Process.png)
+![Translation Process using Python](https://github.com/AMAN-ARABZADEH/Project_SIMS_Technichus_Group/blob/main/translation%20Process%20(1).png)
