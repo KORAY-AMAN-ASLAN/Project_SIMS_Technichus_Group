@@ -50,7 +50,7 @@ with app.app_context():
 
     # Sample content about ISS
 
-    # Sample content about ISS (in Swedish)
+    # Sample content about ISS sources: https://sv.wikipedia.org/wiki/Internationella_rymdstationen
     iss_content = ("Internationella rymdstationen, eller ISS (av engelska: International Space Station, "
                            "ryska: Междунаро́дная косми́ческая ста́нция, МКС; Mezjdunarodnaja kosmitjeskaja stantsija, MKS) "
                            "är en rymdstation ägd av USA, Ryssland, Kanada, Japan och ett antal europeiska länder. "
