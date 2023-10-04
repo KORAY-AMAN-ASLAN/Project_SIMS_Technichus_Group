@@ -22,7 +22,6 @@ async function fetchTranslation(chunk, language) {
     },
     body: JSON.stringify({ text: chunk, language }),
   });
-
   return await response.json();
 }
 
@@ -36,13 +35,13 @@ async function fetchTranslation(chunk, language) {
 
 /**
  * Translates a given text into the specified language using API. from Python
- * 
+ *
  * @param {string} text - The text to translate.
  * @param {string} language - The target language code.
  * @returns {string} - The translated text.
  */
 async function translateText(text, language) {
-  const chunkSize = 1000;  // Define the max size for each chunk
+  const chunkSize = 1000;
   const chunks = [];
   let currentChunk = "";
 
@@ -57,8 +56,8 @@ async function translateText(text, language) {
       currentChunk = "";
     }
   }
-
-  return chunks.join(""); 
+    console.log(chunks.join(""));
+  return chunks.join("");
 }
 
 
@@ -73,7 +72,7 @@ document.getElementById("languageSelect").addEventListener("change", async funct
 
   // Elements to translate
   const textElements = document.querySelectorAll("#text h1, #text .paragraph");
-  console.log(textElements.entries());
+
 
   for (let element of textElements) {
     // Check if the "data-original-text" attribute is already set
@@ -132,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   /**
    * Adds a message to the chat window.
-   * 
+   *
    * @param {string} content - The message text.
    * @param {string} type - The sender type ("user" or "bot").
    */
@@ -155,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   /**
    * Displays a "typing" indicator for the bot in the chat window.
-   * 
+   *
    * @returns {HTMLElement} - The typing indicator element.
    */
   function showTypingIndicator() {

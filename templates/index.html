@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<main>
+
+  <!-- Language Selection Section -->
+  <section class="language-selector">
+    <label for="languageSelect">
+      <i class="fas fa-globe"></i> <!-- Font Awesome globe icon -->
+    </label>
+    <select id="languageSelect" aria-label="Select a language">
+      {% for language in languages %}
+        <option value="{{ language.code }}">{{ language.name }}</option>
+      {% endfor %}
+    </select>
+  </section>
+
+  <!-- Article Section -->
+  <article class="text" id="text" data-original-title="{{ article.title }}">
+    <header>
+      <h1 data-original-text="{{ article.title }}">{{ article.title }}</h1>
+    </header>
+    <section>
+      <p class="paragraph" data-original-text="{{ article.content }}">{{ article.content }}</p>
+    </section>
+  </article>
+
+  <!-- Chatbot Section -->
+  <aside id="chat-box">
+    <div role="log" id="messages"></div>
+    <div class="chat-controls"> <!-- Controls for user input -->
+      <!-- Input field for user to type their message -->
+      <label for="user-input" class="visually-hidden">Type your message</label>
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off">
+      <button id="send-button">Send</button> <!-- Send button for the chat -->
+      <button id="reset-button">Återställ</button>
+    </div>
+  </aside>
+
+</main>
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+{% endblock  %}
