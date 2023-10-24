@@ -6,18 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="../css/dashboard_style.css">
+    <link rel="stylesheet" type="text/css" href="../css/hamburger_menu_style.css">
 </head>
 <body>
 
 <div class="dashboard">
     <div class="corp_header">
-        <h1 id="corp_title">
-            <a href="dashboard.html">
-                .HACK DIGITAL SIGNAGE SOLUTIONS
-            </a>
-        </h1>
+        <div id="dashboard_header_div">
+            <h1 id="corp_title">
+                <a href="dashboard.html">
+                    Exhibit Manager
+                </a>
+            </h1>
+        </div>
 
-        <div id="reg_admin">
+        <div id="reg_admin_btn_div">
             <p id="admin_btn">
                 <a href="admin_reg.html">
                     Register Admin
@@ -25,14 +28,36 @@
             </p>
         </div>
 
-        <div id="log_in">
+        <div id="log_in_btn_div">
             <p id="login_btn">
                 <a href="login_form.html">
                     Log in
                 </a>
             </p>
-            <div id="welcome_div">
-                <p id="welcome_msg">Welcome, </p>
+        </div>
+
+        <div id="welcome_div">
+            <p id="welcome_msg">
+                Welcome,
+            </p>
+        </div>
+
+        <div id="logout_btn_div">
+            <p id="logout_btn">
+                <a href="" id="logout_anchor">
+                    Log out
+                </a>
+            </p>
+        </div>
+
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+
+            <div class="dropdown-menu">
+                <a href="#">Add station</a>
+                <a href="#">View in 3D</a>
             </div>
         </div>
     </div>
@@ -45,16 +70,26 @@
             <a href="register_player.html"> Register Media Player </a>
         </div>
         <div id="manage_media_players_btn" class="option">
-            <a href=""> Manage Media Players </a>
+            <a href=""> Manage Stations </a>
         </div>
     </div>
 
     <div class="media_players">
-
     </div>
 </div>
 
-<script src="../client_side/dashboard.js"></script>
+<script>
+    document.querySelector('.hamburger').addEventListener('click', function() {
+        const dropdown = document.querySelector('.dropdown-menu');
+        if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+            dropdown.style.display = 'block';
+        } else {
+            dropdown.style.display = 'none';
+        }
+    });
+</script>
+
+<script type="module" src="../client_side/dashboard.js"></script>
 </body>
 </html>
 

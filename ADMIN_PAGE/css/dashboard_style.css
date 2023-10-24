@@ -1,37 +1,75 @@
 
+
+#dashboard_header_div {
+    margin-left: -700px;
+}
+
 .corp_header {
-    position: fixed; /* relative to its own position */
-    background-color: cadetblue;
+    position: fixed;
+    background-color: #f0f0f0; /* Subtle background color */
     top: 0;
     left: 0;
     right: 0;
-    border: 5px solid pink;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center horizontally */
+    padding: 20px 0; /* Reduce padding */
+}
+
+#reg_admin_btn_div {
+    margin-right: 40px;
 }
 
 #admin_btn {
-    margin-left: 150px;
+    display: inline;
+    vertical-align: top;
+    margin-left: 500px;
+    color: black;
 }
-
-#sign_up {
-    margin-right: 800px;
+#admin_btn a {
     display: inline-block;
+    text-decoration: none;
 }
+#admin_btn a:active { color: lightpink; }
+#admin_btn a:visited { color: inherit; }
+
+#login_btn {
+    display: inline;
+    color: black;
+}
+#login_btn a {
+    display: inline-block;
+    text-decoration: none;
+}
+#login_btn a:active { color: lightpink; }
+#login_btn a:visited { color: inherit; }
+
+
+#logout_btn {
+    display: inline-block;
+    color: black;
+}
+#logout_btn a {
+    display: inline-block;
+    text-decoration: none;
+}
+#logout_btn a:active { color: lightpink; }
+#logout_btn a:visited { color: inherit; }
 
 #corp_title {
     font-style: italic;
-    margin-left: 80px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 200%;
-    color: pink;
+    font-size: 36px; /* Adjust font size */
+    color: #ff69b4; /* Pink color */
+    white-space: nowrap; /* Ensure text stays on one line */
+    margin-left: 700px;
 }
 
 #corp_title a {
     text-decoration: none;
+    display: inline-block;
     color: pink;
 }
+
 #corp_title a:hover { text-decoration: underline; }
 #corp_title a:active { color: lightpink; }
 #corp_title a:visited { color: inherit; }
@@ -44,31 +82,38 @@
 .dash_title, .media_players { text-align: center; }
 
 #main_options {
-    margin-top: 100px;
+    margin-top: 250px;
     color: #282c34;
-    font-size: 100%;
-}
-
-#main_options {
+    text-decoration: none;
     display: inline-block;
-    padding: 50px;
-    border: 5px solid black;
+    padding: 10px;
     font-family: "Roboto", sans-serif;
     font-size: 120%;
+    margin-left: 200px;
 }
 
 .option {
-    background-color: antiquewhite;
     display: inline-block;
-    padding: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
+    padding: 20px 30px; /* Adjust padding */
+    margin-left: 20px; /* Reduce margin */
+    margin-right: 20px; /* Reduce margin */
     margin-top: 20px;
-    width: 10%;
     text-align: center;
-    border: 20px pink;
+    background-color: #ff69b4; /* Pink background color */
+    color: white; /* Text color */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 16px; /* Adjust font size */
+    text-transform: uppercase; /* Uppercase text */
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out; /* Smooth color transition */
 }
 
-#log_in {
-    margin-left: 50px;
+.option a {
+    text-decoration: none;
 }
+.option a:visited { color: inherit; }
+
+.option:hover { background-color: #d94086; /* Darker pink on hover */ }
+
+#log_in { margin-left: 50px; }
+

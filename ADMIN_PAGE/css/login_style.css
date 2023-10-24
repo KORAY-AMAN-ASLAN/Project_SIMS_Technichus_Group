@@ -19,7 +19,7 @@ form {
 }
 
 /* Style the form header */
-#reg_admin_header {
+#sign_in_header {
     font-family: "Bookman Old Style", serif;
     font-style: italic;
     font-size: 24px;
@@ -48,7 +48,7 @@ label {
 }
 
 /* Style the form submit button */
-#reg_admin_submit_btn {
+#sign_in_submit_btn {
     display: block;
     width: 100%;
     padding: 10px;
