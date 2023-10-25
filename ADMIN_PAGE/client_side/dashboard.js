@@ -1,3 +1,5 @@
+"use strict"
+
 import { sendDataToServer, fetchDataFromServer } from './common.js';
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -33,6 +35,17 @@ document.addEventListener("DOMContentLoaded", () => {
             location.reload();
         });
     })
+
+    document.getElementById('show_stations_link').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default anchor behavior
+        let showStationSection = document.getElementById('show_station');
+        if (showStationSection.style.display === 'none' || showStationSection.style.display === '') {
+            showStationSection.style.display = 'block';
+        } else {
+            showStationSection.style.display = 'none';
+        }
+    });
+
 
 });
 

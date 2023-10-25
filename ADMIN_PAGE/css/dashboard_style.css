@@ -117,3 +117,25 @@
 
 #log_in { margin-left: 50px; }
 
+/* Hidden by default */
+
+#show_station{
+
+    position: relative;
+    display: none;
+    background-color:#d94086;
+    margin: 0 auto;
+    padding: 0.5rem;
+    width: 30%;
+
+}
+
+#show_station .fa-cog {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Adjust these values as needed */
+    font-size: 24px; /* Adjust the size of the icon */
+}
+
+
+

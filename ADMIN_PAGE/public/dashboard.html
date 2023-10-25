@@ -7,6 +7,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" type="text/css" href="../css/dashboard_style.css">
     <link rel="stylesheet" type="text/css" href="../css/hamburger_menu_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
 
@@ -57,7 +58,7 @@
 
             <div class="dropdown-menu">
                 <a href="#">Add station</a>
-                <a href="#">View in 3D</a>
+                <a href="view3d.html">View in 3D</a>
             </div>
         </div>
     </div>
@@ -70,9 +71,26 @@
             <a href="register_player.html"> Register Media Player </a>
         </div>
         <div id="manage_media_players_btn" class="option">
-            <a href=""> Manage Stations </a>
+            <!-- Added an ID for better targeting -->
+            <a href="#" id="show_stations_link" style="color: #fff"> Show Stations </a>
         </div>
     </div>
+
+    <!-- Moved out of the <div>, since it's a separate section to show/hide -->
+    <section id="show_station">
+        <div id="show">
+
+            <h3>Station 1</h3>
+            <i class="fa fa-cog" aria-hidden="true"></i>
+            <h3>Raspberry PI 4B</h3>
+            <h3>Exhibit name: Rymdstation</h3>
+            <label for="on">ON</label>
+            <input type="radio" id="on" name="station" value="on">
+            <label for="off">OFF</label>
+            <input type="radio" id="off" name="station" value="off">
+        </div>
+    </section>
+
 
     <div class="media_players">
     </div>
@@ -87,6 +105,7 @@
             dropdown.style.display = 'none';
         }
     });
+
 </script>
 
 <script type="module" src="../client_side/dashboard.js"></script>
