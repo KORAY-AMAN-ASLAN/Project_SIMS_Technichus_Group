@@ -45,7 +45,5 @@ document.addEventListener("DOMContentLoaded", () => {
             showStationSection.style.display = 'none';
         }
     });
-
-
 });
 

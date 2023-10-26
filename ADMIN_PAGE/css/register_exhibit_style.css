@@ -1,14 +1,14 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    height: auto;
 }
 
-form {
-    margin: 0;
-    padding: 0;
-}
+
+
 
 .center {
+    margin-top: 7rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,4 +61,12 @@ label {
 
 #reg_exh_submit_btn:hover {
     background-color: #d94086;
+}
+
+
+#radio{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
 }

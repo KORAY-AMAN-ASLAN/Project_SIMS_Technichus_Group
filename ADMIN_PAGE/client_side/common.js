@@ -13,16 +13,7 @@
 
 // POST requests
 async function sendDataToServer(endpoint, payloadData) {
-
-    console.log("Data to send: ", payloadData);
-
-    console.log("inside sendDataToServer function " +
-        "in file ´common.js´");
-
     return new Promise((resolve, reject) => {
-
-        console.log("in promise of sendDataToServer function");
-
         fetch(`http://localhost:3000/${endpoint}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
