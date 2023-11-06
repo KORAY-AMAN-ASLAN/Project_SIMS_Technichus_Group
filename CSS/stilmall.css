@@ -1,0 +1,147 @@
+/*
+Dessa koder lägger in en bakgrundsbild på hela hemsidan samt 
+centrerar bakgrundsbilden oavsett storleken på webbläsarens fönster
+*/
+html 
+{
+height: 100%;
+background-image: url("space.jpg"); 
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+background-size: cover;
+background-color: black;
+}
+
+
+/*Följande rader styr utseendet och inställningarna till navigeringsfältet*/
+/* Top menu styles */
+.top-menu {
+background-color: rgba(0, 140, 215, .60); /* Blue background */
+color: #fff; /* White text color */
+padding: 10px;
+text-align: center;
+display: flex;
+border-radius: 15px
+}
+
+/* Language select styles */
+.language-select {
+margin-left: auto; /* Push language selection to the right */
+}
+
+.language-select select {
+background-color: #fff; /* White background */
+color: #333; /* Dark gray text color */
+padding: 5px;
+font-size: 14px;
+border-radius: 8px;
+cursor: pointer;
+}
+
+
+
+/*nedanstående bestämmer hur div kontainern på hemsidan ska se ut.*/
+
+/* Container styles */
+.container {
+width: 100%;
+height: calc(100% - 40px); /* utrymme för övre menyn */
+display: flex;
+flex-direction: column;
+}
+
+/* Main content styles */
+main {
+flex: 1;
+display: flex;
+flex-wrap: wrap; 
+justify-content: space-between;
+align-items: flex-start; 
+padding: 20px;
+}
+
+
+#interactive-content {
+z-index: 1;
+flex: 1;
+min-height: 400px;
+background-color: rgba(0, 0, 0, .40); 
+background-image: url("solarSystem.png"); 
+border: 2px solid rgba(0, 140, 215, .40); 
+border-radius: 8px;
+padding: 20px;
+color: white;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+transition: background 0.5s;
+margin-right: 10px; /* https://stackoverflow.com/questions/9248176/how-to-make-a-gap-between-two-div-within-the-same-column */
+}
+
+.planet-container {
+position: relative; /* https://www.w3schools.com/cssref/pr_pos_z-index.php */
+}
+	
+#earth-icon {
+	z-index: 1;
+	background-image: url("Globe.svg"); 
+	background-size: cover;   
+	position: relative;
+	top: 172px; /* positionen i y-led */
+    left: 380px; /* positionen i x-led */         
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	transition: transform 0.7s;
+}
+
+#mars-icon {
+	z-index: 1;
+	background-image: url("Mars.svg"); 
+	background-size: cover;   
+	position: relative;
+	top: 133px; /* positionen i y-led */
+    left: 463px; /* positionen i x-led */        
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+	transition: transform 0.7s;
+}
+
+
+
+ 
+
+/* Information panel styles */
+#information-box {
+    flex: 1;
+    min-height: 400px;
+    background-color: rgba(0, 0, 0, .40); 
+    border: 2px solid rgba(0, 140, 215, .40); 
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 2px; /* Add spacing from the right */
+	color: white;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
